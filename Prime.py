@@ -15,7 +15,7 @@ def IsPrime(x):
     if x <= 1:
         return False
     else:
-        prime_list = ListPrimes(sqrt(x))
+        prime_list = ListPrimes(int(sqrt(x)))
         for each in prime_list:
             if x % each == 0:
                 return False
